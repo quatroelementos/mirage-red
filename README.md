@@ -45,12 +45,6 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 
 ###dspace.cfg settings
 
-#---------------------------------------------------------------#
-#----------------XMLUI THEME CONFIGURATIONS---------------------#
-#---------------------------------------------------------------#
-# These configs are only used by the XML User Interface         #
-#---------------------------------------------------------------#
-
 xmlui.theme.twiter.username=royopa
 xmlui.theme.facebook.username=royopa
 xmlui.theme.youtube.username=royopa
