@@ -46,5 +46,8 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 ###dspace.cfg settings
 
 xmlui.theme.twiter.username=royopa
+
 xmlui.theme.facebook.username=royopa
+
 xmlui.theme.youtube.username=royopa
+
