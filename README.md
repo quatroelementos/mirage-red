@@ -21,7 +21,7 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 
 ###[dspace]/config/webapp/themes/news-xmlui.xml
 
-```xml
+.. code-block:: xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 	<body>
@@ -40,7 +40,9 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 		<repositoryMeta/>
 	</meta>
 </document>
-```
+
+.. code-block:: cfg
+
 ###dspace.cfg settings
 
 #---------------------------------------------------------------#
