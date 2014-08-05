@@ -1,0 +1,1713 @@
+/**
+ * The contents of this file are subject to the license and copyright
+ * detailed in the LICENSE and NOTICE files at the root of the source
+ * tree and available online at
+ *
+ * http://www.dspace.org/license/
+ */
+/*
+ * style.css
+ *
+ * Primary Styles
+ */
+
+body {
+    background: url('../../images/bg.png') repeat;
+    font: 14px/18px 'arial', 'helvetica', 'clean', 'sans-serif';
+}
+
+/*Font size percentages based on the tables at developer.yahoo.com/yui/fonts/ */
+h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #555;
+    text-align: left;
+    text-shadow: #fff 0px 1px 0;
+}
+
+h2{
+    font-size: 123.1%;
+    color: #000;
+}
+
+h3 {
+    font-size: 116%;
+}
+
+h4 {
+    font-size: 108%;
+}
+
+h5, h6 {
+    font-size: 100%;
+}
+
+a img {
+    border: 0;
+}
+
+/*fix for firefox in os x, where selects get the incorrect
+height if it's not explicitly set this shouldn't be noticeable in
+other browsers*/
+select {
+    height: 20px;
+}
+
+select.multiple {
+    height: auto;
+}
+
+#ds-header-wrapper {
+    background-color: #cc0000;
+    color: white;
+    height: 40px;
+    min-width: 1024px;
+    z-index: 1000;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+#ds-header-wrapper img {
+    margin: 5px 0 0 0;
+    height: 30px;
+    width: auto;
+}
+
+#uhl-header {
+    position: relative;
+    margin: 15px auto 0px;
+    padding: 0;
+    width: 980px;
+    height: 100px;
+}
+
+#uhl-header img {
+    width: auto;
+    height: 100px;
+}
+
+#ds-header-logo-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#ds-header-logo {
+    float:left;
+    width: 48px;
+    height: 50px;
+    margin-top: 10px;
+    background: url('../../images/dspace-logo-only.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-right: 15px;
+}
+
+#ds-header-logo-text {
+    font-size: 400%;
+    color: white;
+    line-height: 70px;
+    font-weight: normal;
+    vertical-align: middle;
+    float: left;
+}
+
+#ds-user-box {
+    right: 0;
+    top: 10px;
+    position: absolute;
+    color: white;
+}
+
+#ds-user-box a{
+    color: white;
+}
+
+#ds-trail-wrapper {
+    position: relative;
+    min-height: 20px;
+    margin: 0px auto 0;
+    width: 980px;
+    padding: 0;
+}
+
+#ds-trail {
+    list-style: none;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#ds-trail li {
+    position: relative;
+    display: inline;
+    font: 12px/30px 'TeXGyreAdventorRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+    margin-right: 5px;
+    text-transform: none;
+}
+
+#ds-trail a {
+    color: #cc0000;
+    text-transform: none;
+    text-decoration: none;
+}
+
+#ds-trail .ds-trail-link.last-link, #ds-trail .ds-trail-link.last-link a{
+    color: #555;
+    font: 12px/30px 'TeXGyreAdventorBold', 'arial', 'helvetica', 'clean', 'sans-serif';
+}
+
+#file_news_div_news {
+    margin: 0;
+}
+
+#uhl-banner-news {
+    padding: 0;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+    width: 715px;
+    height: 175px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background: url('../../images/uhl-banner.png') 0 -30px no-repeat;
+}
+
+#uhl-banner-news p {
+    text-indent: -2000px;
+    display: none;
+}
+
+#uhl-front-content {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+#no-js-warning,
+#ds-header,
+#ds-content {
+    width: 980px;
+    margin: auto;
+    position: relative;
+}
+
+/*ie6 uses quirks mode for strict xhtml pages, and in quirks mode margin: auto; doesn't center things*/
+.ie6 #no-js-warning-wrapper,
+.ie6 #ds-trail-wrapper,
+.ie6 #ds-header-wrapper,
+.ie6 #ds-footer-wrapper,
+.ie6 #ds-content-wrapper {
+    text-align: center;
+}
+
+.ie6 #ds-trail,
+.ie6 #ds-header,
+.ie6 #ds-footer,
+.ie6 #ds-content {
+    margin: 0;
+    text-align: left;
+}
+
+#ds-footer-wrapper {
+    margin-top: 40px;
+}
+
+#ds-footer {
+    position: relative;
+    font: 11px/16px 'SourceSansProRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+    margin: 20px auto 0;
+    width: 100%;
+    height:110px;  
+    background: #cc0000;
+    background:url('../img/footer-bg.png') 0 0px;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#df0215), to(#ae010d));
+    background-image: -webkit-linear-gradient(top, #df0215, #ae010d);
+    background-image: -moz-linear-gradient(top, #df0215, #ae010d);
+    background-image: -ms-linear-gradient(top, #df0215, #ae010d);
+    background-image: -o-linear-gradient(top, #df0215, #ae010d);
+    background-image: linear-gradient(top, #df0215, #ae010d);
+    bottom: 0px;
+    min-width: 1024px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+}
+
+#ds-footer #content {
+    position: relative;
+    margin: 0 auto;
+    height:120px;
+    width: 980px;
+}
+
+#ds-footer #links{
+    width: 615px;
+    height: 100px;
+    float: right;
+    color: #fff;
+    overflow: hidden;
+    padding: 8px 0 0 0;
+    text-align: right;
+    }
+    
+#ds-footer #address{
+    margin: 7px 0 0;
+    height: 40px;
+}   
+
+#ds-footer #links p{
+    display: inline;
+    margin: 5px 0 0 0;
+    padding: 0 10px 0 0px;
+}   
+    
+#ds-footer #links ul{
+    margin: 0px 0;
+    font: 14px/26px 'SourceSansProRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+    list-style-type: none;
+    padding: 0 0;
+    display: inline;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }
+    
+#ds-footer #links ul li {
+    margin: 10px 0 0 0;
+    display: inline;
+    padding: 0 10px;
+    border-left: #fff 1px solid;
+    }
+
+#ds-footer #links ul li a{  
+    text-decoration: none;
+    color: #fff;
+    }
+
+#ds-footer #links ul li.first{
+    border:none;
+    }
+
+
+ #ds-footer #uhl-logo{
+    position: absolute;
+    display: inline;
+    height: 65px;
+    width: 165px;
+    top: 16px;
+    left: 50px;
+    /*z-index:300;*/
+    }
+    
+ #ds-footer #uhl-logo img{
+    width: auto;
+    height: 80px;
+    }
+ 
+   #uhds-links{
+    position: absolute;
+    top: 25px;
+    right: 110px;
+    }
+ 
+ #uh-links{
+    position: absolute;
+    top: 65px;
+    right: 0;
+    }
+ 
+#uh-links ul li{
+    font: 12px/26px 'SourceSansProRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+ }
+
+ 
+#uhl-address {
+    color: #fff;
+    text-shadow: none;
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    }
+
+#uhl-address a{
+    color: #fff;
+    }
+
+#ds-footer #social {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    padding: 3px 0;
+    margin-left: 10px;
+    }
+
+#twitter{
+    margin-right: 10px;
+    float: left;
+    height: 26px;
+    width: 26px;
+    background: url('../../images/twitter-duo.png') no-repeat 0 0px;
+     transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
+    }
+    
+#twitter:hover {
+    background: url('../../images/twitter-duo.png') no-repeat 0 0;
+    opacity: 1.0;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    }
+
+#facebook{
+margin-right: 10px;
+    float: left;
+    height: 26px;
+    width: 26px;
+    background: url('../../images/facebook-duo.png') no-repeat 0 0px;
+     transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
+    }
+    
+#facebook:hover {
+    background: url('../../images/facebook-duo.png') no-repeat 0 0;
+    opacity: 1.0;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    }
+    
+#youtube{
+margin-right: 10px;
+    float: left;
+    height: 26px;
+    width: 26px;
+    background: url('../../images/youtube-duo.png') no-repeat 0 0px;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    opacity: 0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
+    }
+    
+#youtube:hover {
+    background: url('../../images/youtube-duo.png') no-repeat 0 0;
+    opacity:1.0;
+    filter:alpha(opacity=100); /* For IE8 and earlier */
+    }
+
+
+.ie6 #ds-footer-links {
+    display: inline;
+}
+
+/*make transparent PNGs invisible in IE6 until PNG-fix is applied*/
+.ie6 #ds-header-logo,
+.ie6 #ds-footer-logo {
+    visibility: hidden;
+}
+
+
+#ds-body {
+    float: left;
+    background: #fff;
+    border: 1px #aaa solid;
+    width: 655px;
+    height: auto;
+    min-height: 467px;
+    margin: 10px auto 30px;
+    padding: 30px 30px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    
+}
+
+#ds-options-wrapper {
+    float: right;
+    width: 249px;
+    padding-top:10px;
+}
+
+#ds-options {
+    padding: 0;
+}
+
+#ds-body h1.ds-div-head {
+    text-transform: uppercase;
+    font-family: 'TeXGyreAdventorRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+    width: 675px;
+    position: relative;
+    left: -31px;
+    top: -31px;
+    padding: 20px 10px 20px 30px;
+    color: #555;
+    text-shadow: #fff 0px 1px 0;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 20;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+}
+
+h1.ds-option-set-head {
+    margin-top: 20px;
+    background-color: #f0f2f5;
+    padding: 3px 10px;
+    border: 1px solid #d8e8eb;
+    border-bottom: none;
+    font-size: 108%;
+}
+
+#ds-search-option-head{
+    margin-top: 0;
+}
+
+
+div.ds-option-set ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.ds-option-set ul li{
+    margin-bottom: 5px;
+}
+
+
+div.ds-option-set .ds-sublist-head {
+    font-weight: normal;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+
+div.ds-option-set ul.sublist {
+    margin-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+}
+
+
+
+div.ds-option-set ul.sublist li{
+    margin-bottom: 5px;
+}
+
+
+ul#aspect_viewArtifacts_Navigation_list_account.ds-simple-list.nav-container li, ul#aspect_viewArtifacts_Navigation_list_context.ds-simple-list.nav-container li{
+    margin-bottom: 5px;
+}
+
+#ds-search-option {
+    padding: 10px;
+}
+
+#ds-search-form {
+    margin-bottom: 10px;
+}
+
+#ds-search-form input.ds-text-field{
+    width: 160px;
+}
+
+#ds-search-form input.ds-button-field {
+    margin-left: 6px;
+    margin-left: 5px;
+}
+
+#ds-search-form input.ds-text-field,
+#ds-search-form input.ds-button-field{
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#aspect_eperson_EditProfile_list_form,
+.submission fieldset.ds-form-list,
+.administrative fieldset.ds-form-list {
+    margin-bottom: 25px;
+}
+
+.primary {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+ol {
+    margin: 0;
+    list-style: none;
+}
+
+th,
+td {
+    padding: 5px;
+    vertical-align: left;
+}
+
+.ds-button-field,
+#aspect_eperson_StartRegistration_list_registration-progress li {
+    font: 12px/20px 'SourceSansProRegular', 'arial', 'helvetica', 'clean', 'sans-serif';
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    color: #fff;
+    border: none;
+    padding: 3px 10px 0px 10px;
+    background: #cc0000;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#df0215), to(#ae010d));
+    background-image: -webkit-linear-gradient(top, #df0215, #ae010d);
+    background-image: -moz-linear-gradient(top, #df0215, #ae010d);
+    background-image: -ms-linear-gradient(top, #df0215, #ae010d);
+    background-image: -o-linear-gradient(top, #df0215, #ae010d);
+    background-image: linear-gradient(top, #df0215, #ae010d);
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #555;
+    -moz-box-shadow: 0px 0px 1px #555;
+    -webkit-box-shadow: 0px 0px 1px #555;
+}
+
+#aspect_eperson_StartRegistration_list_registration-progress li {
+    cursor: default;
+}
+
+#aspect_eperson_StartRegistration_list_registration-progress li.arrow {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    font-weight: normal;
+}
+
+.ie6 #aspect_eperson_StartRegistration_list_registration-progress li.arrow,
+.ie7 #aspect_eperson_StartRegistration_list_registration-progress li.arrow {
+    background-color: #FFFFFF;
+    color: #444444;
+}
+
+.ie6 #aspect_eperson_StartRegistration_list_registration-progress li.arrow {
+    padding-top: 5px;
+}
+
+ul.ds-progress-list {
+    margin: 0 0 10px 0;
+    padding: 2px 0;
+    text-align: center;
+}
+
+ul.ds-progress-list li {
+    font-weight: bold;
+    overflow: hidden;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+}
+
+ul.ds-progress-list li.button {
+        padding: 0;
+}
+
+ul.ds-progress-list li.button input.ds-button-field {
+        font-size: 77%;
+}
+
+.ie6 ul.ds-progress-list li.button input.ds-button-field,
+.ie7 ul.ds-progress-list li.button input.ds-button-field {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+ul.ds-progress-list li.current input.ds-button-field,
+#aspect_eperson_StartRegistration_list_registration-progress li.current {
+    border: 1px solid #006699;
+    border-top: 1px solid #00ccff;
+    background: #3399ff;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3399ff), to(#0066cc));
+    background-image: -webkit-linear-gradient(top, #3399ff, #0066cc);
+    background-image: -moz-linear-gradient(top, #3399ff, #0066cc);
+    background-image: -ms-linear-gradient(top, #3399ff, #0066cc);
+    background-image: -o-linear-gradient(top, #3399ff, #0066cc);
+    background-image: linear-gradient(top, #3399ff, #0066cc);
+}
+
+ul.ds-progress-list li.disabled input.ds-button-field
+#aspect_eperson_StartRegistration_list_registration-progress li.disabled {
+    background-color: #F0F2F5;
+    border: 1px solid #D8E8EB;
+    color: #444444;
+    cursor: default;
+}
+
+
+ul.ds-progress-list li.arrow {
+        border: none;
+        background: none;
+        font-size: 116%;
+        font-weight: normal;
+        margin-left: 3px;
+        margin-right: 3px;
+}
+
+.ie6 ul.ds-progress-list li.arrow {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+}
+
+textarea.ds-textarea-field,
+input.ds-text-field,
+input.ds-file-field,
+input.ds-button-field,
+input.ds-password-field {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 93%;
+}
+
+textarea.ds-textarea-field,
+input.ds-text-field,
+input.ds-password-field {
+    padding: 3px;
+    border: 1px solid #AAAAAA;
+}
+
+.ie6 input.ds-text-field,
+.ie6 input.ds-password-field {
+    font-size: 85%;
+    height: 22px;
+}
+
+.submission .ds-form-list input.ds-text-field,
+.administrative .ds-form-list input.ds-text-field,
+textarea.ds-textarea-field {
+    width: 623px;
+    max-width: 623px;
+}
+
+table textarea.ds-textarea-field {
+    width: 400px;
+}
+
+#aspect_administrative_item_EditItemMetadataForm_field_value {
+    width: 570px;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_list_edit-schema-new-field-form .ds-text-field,
+#aspect_administrative_item_EditItemMetadataForm_field_language,
+.ds-composite-component input.ds-text-field {
+    width: auto;
+}
+
+textarea.ds-textarea-field:focus,
+input.ds-text-field:focus,
+input.input.ds-password-field:focus {
+    border-color: #5F9DE4;
+}
+
+/*
+ * Show a blue glow around a focused text field
+ * only target browsers that support rgba colors and boxshadows
+ * see http://www.modernizr.com/docs/
+ */
+.rgba.boxshadow textarea.ds-textarea-field:focus,
+.rgba.boxshadow input.ds-text-field:focus,
+.rgba.boxshadow input.ds-password-field:focus {
+    -moz-box-shadow:0 0 8px rgba(95, 158, 212, 0.5);
+    -webkit-box-shadow:0 0 8px rgba(95, 158, 212, 0.5);
+    box-shadow:0 0 8px rgba(95, 158, 212, 0.5);
+    border-color:rgba(95, 158, 212, 0.75);
+    outline:medium none;
+}
+
+span.error {
+    clear: both;
+    display: block;
+    color: #c22121;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
+textarea.ds-textarea-field.error,
+input.ds-text-field.error,
+input.ds-password-field.error {
+    border-color: #c22121;
+    background-color: #fff2f2;
+}
+
+.rgba.boxshadow textarea.ds-textarea-field.error:focus,
+.rgba.boxshadow input.ds-text-field.error:focus,
+.rgba.boxshadow input.ds-password-field.error:focus {
+    -moz-box-shadow:0 0 8px rgba(194, 33, 33, 0.5);
+    -webkit-box-shadow:0 0 8px rgba(194, 33, 33, 0.5);
+    box-shadow:0 0 8px rgba(194, 33, 33, 0.5);
+    border-color:rgba(194, 33, 33, 0.75) !important;
+    outline:medium none;
+}
+
+
+.ds-form-list {
+    margin-top: 15px;
+}
+
+.submission h2,
+.ds-form-list legend{
+    font-size: 182%;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.ds-form-item legend {
+    font-size: 100%;
+    margin:0;
+    color: inherit;
+}
+
+fieldset ol {
+    margin: 0;
+}
+
+li.ds-form-item {
+    list-style: none;
+    margin-bottom: 35px;
+    vertical-align: middle !important;
+    position: relative;
+    clear: left;
+}
+
+li.ds-form-item.last {
+    margin-bottom: 0;
+}
+
+li.ds-form-item .ds-form-label{
+    font-weight: bold;
+    font-size: 110%;
+    color: #000;
+}
+
+li.ds-form-item label.ds-composite-component{
+    display: block;
+    float: left;
+    font-size: 93%;
+    padding:0 8px 0 0;
+}
+
+li.ds-form-item label.ds-composite-component input.ds-text-field{
+    font-size: 100%;
+    width: 242px;
+}
+
+li.ds-form-item .ds-select-field {
+    margin-top: 5px;
+}
+
+.ds-add-button,
+label.ds-composite-component .ds-select-field {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+li.ds-form-item label.ds-composite-component.last{
+    padding:0;
+}
+
+.ds-add-button {
+    vertical-align: top;
+    margin-left: 8px;
+}
+
+
+.ds-form-content input.ds-button-field {
+    font-size: 93%;
+}
+
+#aspect_submission_StepTransformer_field_dc_date_issued_year,
+#aspect_submission_StepTransformer_field_dc_date_issued_day {
+    width: 50px;
+}
+
+#aspect_submission_StepTransformer_field_dc_identifier_value {
+    width: 130px;
+    margin-bottom: 0;
+}
+
+span.composite-help,
+span.field-help {
+    display: block;
+    font-size: 93%;
+    margin-top: 3px;
+    width: 506px;
+    text-align: justify;
+}
+
+.ds-checkbox-field input,
+.ds-radio-field input {
+    margin-left: 0;
+    font-size: 20px;
+}
+
+.ds-checkbox-field label,
+.ds-radio-field label {
+    margin-right: 3px;
+}
+/*hide the double label for checkboxes & radio buttons*/
+.ds-checkbox-field legend,
+.ds-radio-field legend {
+    display: none;
+}
+
+.ds-previous-values {
+    margin-top: 10px;
+    clear: both;
+}
+
+#aspect_submission_Submissions_div_submissions .ds-static-div,
+.submission .ds-form-sublist ol {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.submission .ds-form-sublist li.ds-form-item {
+    margin-bottom: 5px;
+}
+
+.submission .ds-form-sublist .ds-form-label {
+    font-weight: bold;
+}
+
+
+.administrative.tabbed ul.horizontal {
+    list-style: none;
+    margin: 15px 0 0;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.administrative.tabbed ul.horizontal li{
+    float: left;
+    border: 1px solid #9cacba;
+    padding: 5px;
+    margin-bottom: -1px;
+    margin-right: 7px;
+    border-bottom: none;
+}
+
+.administrative.tabbed ul.horizontal li a{
+    text-decoration: none;
+    color: #444444;
+}
+
+.administrative.tabbed ul.horizontal li.active-tab{
+    background-color: #fafafa;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.pane {
+    padding: 10px;
+    clear: both;
+    background-color: #fafafa;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.pane .ds-form-list {
+    margin-top: 0;
+}
+
+.administrative.tabbed .pane {
+    border-top: none;
+}
+
+.pagination,
+.pagination-masked {
+    padding: 7px;
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    line-height: 1em;
+    vertical-align:middle;
+}
+
+.pagination-links {
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+.pagination-links li {
+    display: inline;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.current-page-link {
+    font-weight: bold;
+    color: #1F3F5E;
+}
+
+.current-page-link a{
+    color: #1F3F5E;
+}
+
+.pagination-info {
+    float: left;
+    margin:0;
+}
+
+.pagination-masked.top {
+    margin-top: 5px;
+}
+
+.ds-artifact-list {
+    list-style: none;
+    margin: 0;
+    line-height: 153.9%;
+}
+
+.file-wrapper,
+.ds-artifact-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ds-artifact-item.collection,
+.ds-artifact-item.community {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.community .artifact-title a {
+    font-weight: bold;
+}
+
+.collection .artifact-title a {
+    font-weight: normal;
+}
+
+#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser .short-description, #aspect_discovery_SiteRecentSubmissions_div_site-home .short-description {
+    display: none;
+}
+
+#aspect_artifactbrowser_SimpleSearch_div_search-results li, #aspect_discovery_SimpleSearch_div_search-results li, #aspect_artifactbrowser_AdvancedSearch_div_search-results li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#aspect_artifactbrowser_SimpleSearch_div_search-results ul, #aspect_discovery_SimpleSearch_div_search-results ul, #aspect_artifactbrowser_AdvancedSearch_div_search-results ul {
+    margin-bottom: 25px;
+}
+
+.artifact-title {
+    font-size: 123.1%;
+    line-height: 140%;
+}
+
+.result-query,
+.artifact-info {
+    color: gray;
+}
+
+.artifact-abstract {
+    text-align: justify;
+}
+
+ul.alphabet {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+ul.alphabet li {
+    display:inline-block;
+    padding-right: 0px;
+    min-width: 20px;
+    text-align: center;
+}
+
+ul.alphabet li a {
+    text-align: center;
+    }
+
+#aspect_eperson_PasswordLogin_list_password-login .ds-form-item {
+    float: left;
+    margin: 0;
+    margin-right: 25px;
+}
+
+#aspect_eperson_PasswordLogin_list_password-login .ds-form-item a {
+    margin-left: 20px;
+}
+
+#aspect_eperson_PasswordLogin_list_password-login .ds-form-item.last {
+    clear: left;
+}
+
+
+#aspect_eperson_PasswordLogin_list_password-login .ds-form-item.last .ds-form-label{
+    display: none;
+}
+
+td select.ds-select-field {
+    margin-left: 5px;
+}
+
+form.search {
+    background-color: #fafafa;
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form.search label {
+    font-weight: bold;
+}
+
+form.search p.ds-paragraph.button-list {
+    text-align: center;
+    margin: 0;
+    text-align: right;
+    margin: 0 20px 10px 0;
+    }
+
+form.search fieldset {
+    margin: 0;
+}
+
+form.search .ds-form-item {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+form.search .ds-form-item select{
+    margin-top: 0;
+}
+
+form.search label.ds-composite-component .ds-select-field{
+    margin-top: 6px;
+}
+
+form.search .ds-form-item label {
+    font-size: 100%;
+}
+
+form.search .ds-form-content {
+    display: inline;
+}
+
+form.search table input.ds-text-field {
+   margin: 0;
+}
+
+form.search .field-help {
+    margin: 3px 0;
+}
+
+.collection .search,
+.community .search {
+    margin-top: 25px;
+}
+
+#aspect_discovery_CollectionSearch_p_search-query,
+#aspect_discovery_CommunitySearch_p_search-query{
+    margin-bottom:0;
+}
+
+.result-query {
+    margin-bottom: 30px;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_table_metadata-schema-edit-existing-fields,
+#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table,
+#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry,
+#aspect_submission_Submissions_table_unfinished-submissions,
+#aspect_submission_Submissions_table_submissions-inprogress,
+table.detailtable {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+}
+
+
+#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry tr,
+table.detailtable tr {
+    line-height: 1.6em;
+    border: 1px solid #ebebeb;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_table_metadata-schema-edit-existing-fields tr.even,
+#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table tr.even,
+#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry tr.even,
+#aspect_submission_Submissions_table_unfinished-submissions tr.even,
+#aspect_submission_Submissions_table_submissions-inprogress tr.even,
+table.detailtable tr.even {
+    background-color: #fafafa;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_table_metadata-schema-edit-existing-fields td,
+#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table td,
+#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry td,
+#aspect_submission_Submissions_table_unfinished-submissions td,
+#aspect_submission_Submissions_table_submissions-inprogress td,
+table.detailtable td {
+    padding: 5px 10px;
+    text-align: justify;
+    border: 1px solid #ebebeb;
+    vertical-align: top;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_table_metadata-schema-edit-existing-fields tr.ds-table-header-row,
+#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table tr.ds-table-header-row,
+#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry tr.ds-table-header-row,
+#aspect_submission_Submissions_table_unfinished-submissions tr.ds-table-header-row,
+#aspect_submission_Submissions_table_submissions-inprogress tr.ds-table-header-row {
+    border: none;
+}
+
+
+.ds-table {
+    width: 100%;
+}
+
+table.detailtable td.label-cell {
+    font-weight: bold;
+    text-align: left;
+    width: 100px;
+}
+
+div.item-summary-view-metadata {
+    text-align: left;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+div.simple-item-view-authors {
+    font-size: 123.1%;
+    font-weight: bold;
+    border-bottom:1px solid #ccc;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+div.simple-item-view-authors span{
+    text-align: justify;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h2,
+div.item-summary-view-metadata p.item-view-toggle-bottom,
+div.simple-item-view-description {
+    margin-top: 20px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h2,
+div.simple-item-view-description h3{
+    border-bottom:1px solid #ccc;
+    margin-bottom: 3px;
+}
+
+#aspect_artifactbrowser_ItemViewer_div_item-view h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+div.spacer{
+    height: 15px;
+}
+
+.thumbnail-wrapper,
+.file-metadata,
+.file-link {
+    float: left;
+    margin-right: 15px;
+}
+
+.item-metadata {
+    float: left;
+}
+
+.file-metadata {
+    width: 300px;
+}
+
+.file-metadata span,
+.item-metadata span {
+    float: left;
+}
+
+.item-metadata span.content span {
+    float: none;
+}
+
+.file-metadata span.bold,
+.item-metadata span.bold {
+    width: 80px;
+    clear: left;
+    text-align: right;
+    margin-right: 7px;
+}
+
+#ds-system-wide-alert,
+.notice {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bfc221;
+    background-color: #fffff2;
+}
+
+.notice.success
+{
+    border-color: #21c221;
+    background-color: #f2fff2;
+}
+
+#ds-system-wide-alert,
+.notice.failure
+{
+    border-color: #c22121;
+    background-color: #fff2f2;
+}
+
+#ds-system-wide-alert p {
+    margin: 0;
+}
+
+#aspect_artifactbrowser_CommunityViewer_div_community-home h2,
+#aspect_artifactbrowser_CollectionViewer_div_collection-home h2 {
+    margin-top: 30px;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+.ds-logo-wrapper {
+    display: block;
+    width: 655px;
+    position: relative;
+}
+
+.ds-logo-wrapper img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+#aspect_administrative_item_FindItemForm_list_find-item-form .ds-form-item {
+    margin:0;
+}
+
+#aspect_administrative_registries_EditMetadataSchema_div_edit-schema-new-field  .ds-form-item.last {
+    margin-top: -25px;
+}
+
+#no-js-warning {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav-head {
+    position: relative;
+    display: block;
+    height: 28px;
+    padding: 6px 20px 5px;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 20;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+}
+
+.nav-head .internal-titlebar {
+    position: relative;
+    width: auto;
+    height: 28px;
+    font: 14px/28px 'TeXGyreAdventorBold', 'arial', 'helvetica', 'clean', 'sans-serif';
+    text-transform: uppercase;
+    float: left;
+    color: #555;
+    text-shadow: #fff 0px 1px 0;
+}
+
+.nav-container {
+    position: relative;
+    background: #fff;
+    border: 1px #aaa solid;
+    height: auto;
+    overflow: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px 30px 20px;
+    -moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-top: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+ul.nav-container {
+    list-style: none;
+}
+
+table#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table.ds-table {
+    width: 655px;
+    margin-bottom: 20px;
+}
+
+h2.ds-table-head, h2.ds-head {
+    margin: 20px 0 10px;
+}
+
+fieldset#aspect_artifactbrowser_AdvancedSearch_list_search-query.ds-form-list label {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.8em;
+    border-bottom: 1px solid #aaa;
+}
+
+select#aspect_artifactbrowser_AdvancedSearch_field_scope.ds-select-field{
+    margin-left: 10px;
+}
+
+fieldset#aspect_artifactbrowser_AdvancedSearch_list_search-query.ds-form-list span.field-help {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+fieldset#aspect_artifactbrowser_AdvancedSearch_list_search-query.ds-form-list {
+    margin: 10px 20px 10px;
+    width: 595px;
+}
+
+table#aspect_artifactbrowser_AdvancedSearch_table_search-query.ds-table {
+    margin: 20px 20px 20px;
+    width: 595px;
+    border: 1px #d0d0d0 solid;
+    background: #fff;
+    height: auto;
+}
+
+ table#aspect_artifactbrowser_AdvancedSearch_table_search-query.ds-table tr:last-child{
+    
+}
+
+table#aspect_artifactbrowser_AdvancedSearch_table_search-query.ds-table th {
+    text-align: left;
+    border-bottom: 1px #d0d0d0 solid;
+    color: #000;
+}
+
+th.ds-table-header-cell.odd, th.ds-table-header-cell.even{
+    padding-left: 10px;
+}
+
+table#aspect_artifactbrowser_AdvancedSearch_table_search-controls.ds-table {
+    margin: 20px auto 20px;
+    width: 595px;
+}
+
+table#aspect_artifactbrowser_AdvancedSearch_table_search-controls.ds-table tbody  {
+    text-align: center;
+    border: 1px #d0d0d0 solid;
+    background: #fff;
+}
+
+div#ds-search-option.ds-option-set.nav-container {
+    padding-bottom: 20px;
+}
+
+div#ds-search-option.ds-option-set.nav-container label {
+    margin-left: 20px;
+    font-size: 85%;
+}
+
+input#ds-search-form-scope-container, input#ds-search-form-scope-all{
+    margin: 0 5px 0px 0;
+}
+
+div#ds-search-option.ds-option-set.nav-container a {
+    margin: 0px 10px 0;
+    font-weight: bold;
+    float: right;
+}
+
+tr.ds-table-row.even {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ebebeb;
+}
+
+tr.ds-table-row.odd {
+    border-bottom: 1px solid #ebebeb;
+}
+
+table#aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-subject-results.ds-table th.ds-table-header-cell,
+table#aspect_artifactbrowser_ConfigurableBrowse_table_browse-by-author-results.ds-table th.ds-table-header-cell{
+    text-align: center;
+}
+
+
+/*
+tr.ds-table-row.odd:last-child, table#aspect_artifactbrowser_AdvancedSearch_table_search-query.ds-table tr:last-child, table#aspect_administrative_eperson_ManageEPeopleMain_table_eperson-search-table.ds-table tr:last-child{
+    border-bottom: none;
+}
+*/
+
+tr.ds-table-header-row {
+    text-align: left;
+    }
+
+table#aspect_administrative_eperson_ManageEPeopleMain_table_eperson-search-table.ds-table {
+    width: 655px;
+    margin: 20px auto;
+    }
+    
+table#aspect_administrative_group_ManageGroupsMain_list_actions.ds-gloss-list, table#aspect_administrative_group_ManageGroupsMain_table_groups-search-table.ds-table {
+    width: 615px;
+    margin: 20px;
+    }   
+    
+table#aspect_administrative_eperson_ManageEPeopleMain_table_eperson-search-table.ds-table tbody{    
+    text-align: left;
+    /*border: 1px #d0d0d0 solid;*/
+    background: #fff;
+    }
+
+/* Selects homepage h1 */
+#file_news_div_news~h1 {
+    background-image: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 30px 10px 20px 30px;
+    top: 0; 
+}
+
+#aspect_artifactbrowser_StatisticsViewer_div_statistics h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+ul#aspect_administrative_ControlPanel_list_options.ds-simple-list.clearfix.horizontal li{
+    color: #cc0000;
+    border: 1px solid #d0d0d0;
+    border-bottom: none;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 10px 5px;
+}
+
+table#aspect_administrative_eperson_ManageEPeopleMain_list_actions.ds-gloss-list, table#aspect_administrative_eperson_ManageEPeopleMain_table_eperson-search-table.ds-table {
+    width: 615px;
+    margin: 20px;
+}
+
+table#aspect_administrative_ControlPanel_list_javaOs.ds-gloss-list, table#aspect_administrative_ControlPanel_list_runtime.ds-gloss-list, table#aspect_administrative_ControlPanel_list_dspace.ds-gloss-list, table#aspect_administrative_ControlPanel_list_oai-generator-settings.ds-gloss-list, table#aspect_administrative_ControlPanel_list_oai-harvester-settings.ds-gloss-list, table#aspect_administrative_ControlPanel_table_users.ds-table {
+    width: 615px;
+    margin: 20px;
+    }
+    
+table#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry.ds-table tr{
+    border: none;
+    }
+    
+table#aspect_administrative_registries_FormatRegistryMain_table_bitstream-format-registry.ds-table tr td{
+    border-left: none;
+    border-right: none;
+    }
+    
+form#aspect_eperson_PasswordLogin_div_login.ds-interactive-div.primary h2 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    }
+    
+table#aspect_submission_Submissions_table_unfinished-submissions.ds-table tbody tr td, table#aspect_administrative_registries_MetadataRegistryMain_table_metadata-registry-main-table.ds-table tr td {
+    border: none;
+    }
+    
+table#aspect_submission_Submissions_table_unfinished-submissions.ds-table {
+    border-left: none
+    border-right: none;
+    }
+    
+#aspect_submission_Submissions_table_unfinished-submissions tr,
+#aspect_submission_Submissions_table_submissions-inprogress tr {
+    line-height: 1.6em;
+    }   
+    
+fieldset#aspect_submission_StepTransformer_list_submit-initial-questions.ds-form-list ol {
+    margin-left: 30px;
+    }
+    
+fieldset#aspect_submission_StepTransformer_list_submit-initial-questions.ds-form-list ol li {
+    margin: 20px 0 15px;    
+    }
+    
+fieldset#aspect_submission_StepTransformer_list_submit-initial-questions.ds-form-list ol li label.ds-form-label {
+    text-transform: capitalize;
+    }
+
+fieldset#aspect_submission_StepTransformer_list_submit-review.ds-form-list h2 {
+    margin-bottom: 20px;
+    }   
+    
+form#aspect_administrative_authorization_AuthorizationMain_div_authorization-main.ds-interactive-div.primary.administrative.authorization h2 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+table#aspect_administrative_authorization_AuthorizationMain_list_actions.ds-gloss-list, div#aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList.ds-static-div {
+    width: 615px;
+    margin: 10px auto 10px;
+    }
+    
+div#aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList.ds-static-div p {
+    
+    }   
+    
+    
+div#aspect_administrative_authorization_AuthorizationMain_div_authorization-containerList.ds-static-div ul {
+    margin-left: 0;
+    }
+    
+ul#aspect_administrative_authorization_AuthorizationMain_list_containerList.ds-simple-list li{
+    list-style-type: none;
+    }
+    
+ul#aspect_administrative_authorization_AuthorizationMain_list_containerList.ds-simple-list li ul li{
+    list-style-type: disc;
+    margin-left: 20px;
+    }
+
+ul#aspect_administrative_authorization_AuthorizationMain_list_containerList.ds-simple-list li span.bold a{
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 20px 0 5px 0;
+    display: block;
+    font-size: 110%;
+    color: #000;
+    }
+    
+ul#aspect_administrative_authorization_AuthorizationMain_list_containerList.ds-simple-list li span.bold a:hover{
+    color: #cc0000; 
+    }
+    
+form#aspect_administrative_registries_MetadataRegistryMain_div_metadata-registry-main.ds-interactive-div.primary.administrative.metadata-registry h2{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    }
+    
+div#aspect_administrative_registries_MetadataRegistryMain_div_add-schema.ds-static-div{ 
+        width: 615px;
+        margin: 10px auto 10px;
+        }
+        
+ul#aspect_administrative_WithdrawnItems_list_jump-list.ds-simple-list.alphabet a{
+    width: 20px;
+    }   
+    
+div#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser.ds-static-div.primary ul li a{
+    /*color: #000;*/
+}
+
+div#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser.ds-static-div.primary ul li a:hover{
+    color: #cc0000;
+}
+
+div#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser.ds-static-div.primary ul li{
+    list-style-type: none;
+    margin: 15px 0 5px 0;
+}
+
+div#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser.ds-static-div.primary ul li ul li{
+    list-style-type: disc;
+    font-size: 100%;
+    margin: 5px 0 5px 0;
+}
+
+div#aspect_artifactbrowser_CommunityBrowser_div_comunity-browser.ds-static-div.primary ul li ul li a{
+    color: #555;
+    font-size: 80%;
+}
+
+form#aspect_artifactbrowser_FrontPageSearch_div_front-page-search.ds-interactive-div.primary p {
+    margin-left: 20px;
+}
+
+div#uhl-front-content.ds-static-div {
+    line-height: 1.6em;
+    position: absolute;
+    width: 675px;
+    padding: 15px 20px 5px 20px;
+    top: 60px;
+    left: 1px;
+    color: #fff;
+    background: url('../../images/70percentblack.png') repeat;
+    }
+
+#ds-options .ds-option-set-head {
+    position: relative;
+    display: block;
+    height: 28px;
+    padding: 6px 20px 5px;
+    border: 1px #aaa solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    z-index: 20;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);    
+
+    font: 14px/28px 'TeXGyreAdventorBold', 'arial', 'helvetica', 'clean', 'sans-serif';
+    text-transform: uppercase;
+    color: #555;
+    text-shadow: #fff 0px 1px 0;
+}
