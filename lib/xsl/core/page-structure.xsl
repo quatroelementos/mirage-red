@@ -594,27 +594,41 @@
              </xsl:attribute>
         </img>
     </xsl:template>
-
     <!-- Like the header, the footer contains various miscellaneous text, links, and image placeholders -->
     <xsl:template name="buildFooter">
         <div id="ds-footer-wrapper">
             <div id="ds-footer">
                 <div id="content">
-                <div id="links">
-                <div id="social">
-                <a href="http://www.twitter.com/uhoustonlib">
-                <div title="Twitter" id="twitter"><xsl:text> </xsl:text></div>
-                </a>
-                <a href="https://www.facebook.com/uhlibraries">
-                <div title="Facebook" id="facebook"><xsl:text> </xsl:text></div>
-                </a>
-                <a href="http://www.youtube.com/user/uhlibraries">
-                <div title="YouTube" id="youtube"><xsl:text> </xsl:text></div>
-                </a>
-                </div>
-                <div id="uhds-links">
-                <ul>
-                <li class="first">
+                    <div id="links">
+                        <div id="social">
+                            <!-- Twitter account -->
+                            <a target="_blank">
+                                <xsl:attribute name="href">
+                                    <xsl:text>http://www.twitter.com/</xsl:text>
+                                    <xsl:text>royopa</xsl:text>
+                                </xsl:attribute>
+                                <div title="Twitter" id="twitter"><xsl:text> </xsl:text></div>
+                            </a>
+                            <!-- Facebook account -->
+                            <a target="_blank">
+                                <xsl:attribute name="href">
+                                    <xsl:text>https://www.facebook.com/</xsl:text>
+                                    <xsl:text>royopa</xsl:text>
+                                </xsl:attribute>
+                                <div title="Facebook" id="facebook"><xsl:text> </xsl:text></div>
+                            </a>
+                            <!-- Youtube account -->
+                            <a target="_blank">
+                                <xsl:attribute name="href">
+                                    <xsl:text>http://www.youtube.com/user/</xsl:text>
+                                    <xsl:text>royopa</xsl:text>
+                                </xsl:attribute>
+                                <div title="YouTube" id="youtube"><xsl:text> </xsl:text></div>
+                            </a>
+                        </div>
+                    <div id="uhds-links">
+                        <ul>
+                            <li class="first">
                     <a>
                         <xsl:attribute name="href">
                             <xsl:value-of
