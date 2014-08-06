@@ -6,10 +6,9 @@ An experimental extracted repo of the mirage theme files, useful for including a
 Folder
 --
 
-###[dspace]/xmlui/webapp/themes
+[dspace]/xmlui/webapp/themes
 
-
-based on 
+Based on 
 ---
 
 https://repositories.tdl.org/uh-ir
@@ -19,9 +18,11 @@ Links
 
 https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customization
 
-###[dspace]/config/webapp/themes/news-xmlui.xml
+##Files
 
-.. code-block:: xml
+[dspace]/config/webapp/themes/news-xmlui.xml
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 	<body>
@@ -40,6 +41,7 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 		<repositoryMeta/>
 	</meta>
 </document>
+```
 
 ##Settings
 
