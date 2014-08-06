@@ -21,7 +21,7 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 
 ###[dspace]/config/webapp/themes/news-xmlui.xml
 
-```xml
+.. code-block:: xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 	<body>
@@ -40,15 +40,20 @@ https://wiki.duraspace.org/display/DSDOC18/Mirage+Configuration+and+Customizatio
 		<repositoryMeta/>
 	</meta>
 </document>
-```
-###dspace.cfg settings
 
-#---------------------------------------------------------------#
-#----------------XMLUI THEME CONFIGURATIONS---------------------#
-#---------------------------------------------------------------#
-# These configs are only used by the XML User Interface         #
-#---------------------------------------------------------------#
+##Settings
 
-xmlui.theme.twiter.username=royopa
-xmlui.theme.facebook.username=royopa
-xmlui.theme.youtube.username=royopa
+page-structure.xsl
+
+Add twitter, facebook, youtube accounts in div id = "social"
+
+##Images
+
+/xmlui/themes/Mirage/images/UHL-logo.png - 355 x 30px
+
+/xmlui/themes/Mirage/images/uhir-logo.png - 734 x 100px
+
+/xmlui/themes/Mirage/images/UHL-stacked.png - 202 x 80px
+
+
+---
